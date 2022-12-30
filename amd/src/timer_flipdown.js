@@ -78,7 +78,7 @@ define( ['jquery'], function ($) {
                     }),
                     $('<input>', {
                         'type': 'submit',
-                        'class': 'btn btn-secondary',
+                        'class': 'btn btn-primary',
                         'id': 'startAttemptButton',
                         'disabled': true,
                         'value': attemptquiz
