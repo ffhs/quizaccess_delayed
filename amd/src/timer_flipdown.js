@@ -88,6 +88,10 @@ define( ['jquery'], function ($) {
             // Insert above other buttons and messages.
             $(selector).prepend(divsection);
             $('[id=startAttemptButton]').prop('disabled', true);
+
+            var continuebutton = $(selector).find('.continuebutton');
+            continuebutton.prev('p').hide();
+            continuebutton.hide();
         },
         startCounter: function () {
             new FlipDown(quizOpenTime / 1000, {
