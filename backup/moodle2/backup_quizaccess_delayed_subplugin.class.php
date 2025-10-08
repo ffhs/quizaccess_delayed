@@ -46,7 +46,7 @@ class backup_quizaccess_delayed_subplugin extends backup_mod_quiz_access_subplug
         $subplugin = $this->get_subplugin_element();
         $subpluginwrapper = new backup_nested_element($this->get_recommended_name());
         $subplugintablesettings = new backup_nested_element('quizaccess_delayed',
-                null, array('delayed'));
+                null, array('delayedattempt'));
 
         // Connect XML elements into the tree.
         $subplugin->add_child($subpluginwrapper);
